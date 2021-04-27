@@ -11,7 +11,10 @@ public class HanoiTower {
 		peg2 = new Peg(2, num);
 		peg3 = new Peg(3,num);
 		numDiscs = num;
-		peg1
+		for(int x = 0; x < num; x++)
+		{
+			peg1.addDisc(x);
+		}
 	}
 	public void solveTower()
 	{
