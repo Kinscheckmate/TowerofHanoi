@@ -26,14 +26,14 @@ public class HanoiTower {
 		if(numtoMove > 0) {
 			moveTower(startPeg, extraPeg, endPeg, numtoMove - 1 );
 			startPeg.moveTopDisc(endPeg);
-			moveTower(extraPeg, endPeg, startPeg, numtoMove-1 );
+			moveTower(extraPeg, endPeg, startPeg, numtoMove - 1 );
 		}
 
 		
 	}
 	public static void main(String[] args) {
 
-		HanoiTower ht = new HanoiTower(2);
+		HanoiTower ht = new HanoiTower(3);
 		ht.solveTower();
 
 	}
