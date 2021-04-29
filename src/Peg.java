@@ -42,18 +42,16 @@ public class Peg {
 		// add the disc with the given number to the top of the stack on the peg.
 		// don't forget to make sure the move is value (no disc on top of a smaller one)
 	}
-	public int popDisc()
-	{
-		if(count > 0) {
+	public int popDisc() {
+		if (count > 0) {
 			int temp = discs[count - 1];
 			discs[count - 1] = 0;
 			count--;
 			return temp;
+		} else {
+			System.out.println("bad pop"); //in case they try and pop a peg without any discs
 		}
-		else
-		{
-			throw new IllegalArgumentException(); //in case they try and pop a peg without any discs
-		}
+		return 0;
 	}
 		//remove the top disc from the peg.  Return its value.
 
